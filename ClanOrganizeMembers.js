@@ -1,5 +1,3 @@
-//http://www.armyneedyou.com/team/user
-
 var $aow = null;
 
 (() => {
@@ -111,7 +109,6 @@ function AoW() {
       "32643013",  //Lilo e Stitch
       "31622081",  //BOSS R.P.V.
       "54718072",  //BOSS Marcelo 2 
-      "8658523",   //BOSS SrtaJakyᶠᵒᵇ    
       "34371337",  //BOSS MarcosD  
     ]
   }]
