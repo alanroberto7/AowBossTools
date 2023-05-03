@@ -205,7 +205,7 @@ function AoW() {
       let clan = self.listClan[i];
 
       log += `▬▬▬▬▬ ${clan.Code} - ${clan.Id} (${clan.Members.length}/50) ▬▬▬▬▬\n\n`;
-      log += `${clan.Members.map(member => `Id: ${member.Id.padEnd(10, ' ')}\t${member.Name.replace(/["""]/g, '').trim().padEnd(20, ' ')}\t✮ ${member.Ranking}\t♜ ${member.Trophies}\n`)}\n`.replace(/[,]/g, '');
+      log += `${clan.Members.map((member, indice) => `${(indice + 1).toString().padStart(2, ' ')}º ${member.Id.padEnd(8, ' ')}\t${member.Name.replace(/["""]/g, '').trim().padEnd(16, ' ')}\t★ ${member.Ranking.padEnd(6, ' ')} ♜ ${member.Trophies}\n`)}\n`.replace(/[,]/g, '');
       log += `\n`;
     }
 
@@ -228,7 +228,7 @@ function AoW() {
       let fixedMembers = clan.NewMembers.filter(member => clan.FixedMembers.includes(member.Id));
 
       log += `▬▬▬▬▬ ${clan.Code} - ${clan.Id} ▬▬▬▬▬\n\n`;
-      log += `${fixedMembers.map(member => `Id: ${member.Id.padEnd(10, ' ')}\t${member.Name.replace(/["""]/g, '').trim().padEnd(20, ' ')}\n`)}\n`.replace(/[,]/g, '');
+      log += `${fixedMembers.map((member, indice) => `Id: ${member.Id.padEnd(8, ' ')}\t${member.Name.replace(/["""]/g, '').trim().padEnd(16, ' ')}\n`)}\n`.replace(/[,]/g, '');
       log += `\n`;
     }
 
@@ -252,8 +252,8 @@ function AoW() {
       let comes = clan.NewMembers.filter(o => o.currentClan.Id != o.newClan.Id);
 
       log += `▬▬▬▬▬ ${clan.Code} - ${clan.Id} ▬▬▬▬▬\n\n`;
-      log += `Sai:   \n${leaves.map(member => `Id: ${member.Id.padEnd(10, ' ')}\t${member.Name.replace(/["""]/g, '').trim().padEnd(20, ' ')} \t\t🢂\t${member.newClan.Code} - ${member.newClan.Id}\n`)}\n`.replace(/[,]/g, '');
-      log += `Entra: \n${comes.map(member => `Id: ${member.Id.padEnd(10, ' ')}\t${member.Name.replace(/["""]/g, '').trim().padEnd(20, ' ')} \t\t🢀\t${member.currentClan.Code} - ${member.currentClan.Id}\n`)}\n`.replace(/[,]/g, '');
+      log += `Sai:   \n${leaves.map(member => `Id: ${member.Id.padEnd(8, ' ')}\t${member.Name.replace(/["""]/g, '').trim().padEnd(16, ' ')} \t🢂 ${member.newClan.Code} - ${member.newClan.Id}\n`)}\n`.replace(/[,]/g, '');
+      log += `Entra: \n${comes.map(member => `Id: ${member.Id.padEnd(8, ' ')}\t${member.Name.replace(/["""]/g, '').trim().padEnd(16, ' ')} \t🢀 ${member.currentClan.Code} - ${member.currentClan.Id}\n`)}\n`.replace(/[,]/g, '');
       log += `\n`;
     }
 
@@ -275,7 +275,7 @@ function AoW() {
       let clan = self.listClan[i];
 
       log += `▬▬▬▬▬ ${clan.Code} - ${clan.Id} (${clan.NewMembers.length}/50) ▬▬▬▬▬\n\n`;
-      log += `${clan.NewMembers.map(member => `Id: ${member.Id.padEnd(10, ' ')}\t${member.Name.replace(/["""]/g, '').trim().padEnd(20, ' ')}\t✮ ${member.Ranking}\t♜ ${member.Trophies}\n`)}\n`.replace(/[,]/g, '');
+      log += `${clan.NewMembers.map((member, indice) => `${(indice + 1).toString().padStart(2, ' ')}º ${member.Id.padEnd(8, ' ')}\t${member.Name.replace(/["""]/g, '').trim().padEnd(16, ' ')}\t★ ${member.Ranking.padEnd(6, ' ')} ♜ ${member.Trophies}\n`)}\n`.replace(/[,]/g, '');
       log += `\n`;
     }
 
@@ -295,6 +295,15 @@ function AoW() {
 
   self.fxClearLog = () => {
     $("#txtLog").val("")
+  }
+
+  self.fxFormatText = (text, defaultSize) => {
+    let resultText = text.replace(/["""]/g, '');
+    let defaultTabs = defaultSize ? Math.floor(defaultSize / 8) : 8;
+    let textTabs = Math.floor(text.length / 8);
+    let resultTabs = defaultTabs <= textTabs ? "\t" : "\t".repeat(defaultTabs - textTabs + 1)
+
+    return resultText + resultTabs;
   }
 
   self.html = new function () {
@@ -473,12 +482,14 @@ function AoW() {
             id: "txtLog",
             readonly: "readonly",
             rows: "20",
-            cols: "100"
+            cols: "100",
           })
           .css({
             width: "98%",
             height: "80vh",
             margin: "2px 0px 0px 0px",
+            "font-family": "Consolas",
+            "font-size": "12px"
           })
         )
       )
