@@ -25,7 +25,6 @@ function AoW() {
   self.debugger_fxListarMembrosPosTrocas = false;
   self.listClan = [{
     Id: 8961,
-
     Name: "[BOSS] FOB FORÇA BRASILEIRA",
     Code: "[B0SS] FOB1",
     Token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiI4OTYxIn0.Og1dqBOmxjQWgRkrQAkKdujUmnaVNhgCNppV8mpDOLE",
