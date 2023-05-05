@@ -47,6 +47,9 @@ function AoW() {
       "31897672",  //BOSS Maximus
       "8749059",   //JEREBA ᶠᵒᵇ  
       "31679348",  //9Julho
+      "32761106",  //BOSS SPV ⁿᵒ ʷᵃʳ 
+      "32643013",  //Lilo e Stitch
+      "31622081",  //BOSS R.P.V.
     ]
   }, {
     Id: 124511,
@@ -84,6 +87,7 @@ function AoW() {
       "20716375",  //BOSS Junior71
       "6818820",   //BOSS CauNas
       "50989881",  //BOSS JÒŤÄ ĶÄ 
+      "9765666",   //BOSS Thor-rj
     ]
   }, {
     Id: 1264,
@@ -93,9 +97,7 @@ function AoW() {
     Members: [],
     FixedMembers: [
       "31861030",  //Thor-rj2
-      "9765666",   //BOSS Thor-rj
-      "13721291",  //Motörhead ᵇᵒˢˢ 
-
+      //"13721291",  //Motörhead ᵇᵒˢˢ 
     ]
   }, {
     Id: 13166,
@@ -105,9 +107,6 @@ function AoW() {
     Members: [],
     FixedMembers: [
       "45020374",  //BOSS Jean Grey 
-      "32761106",  //BOSS SPV ⁿᵒ ʷᵃʳ 
-      "32643013",  //Lilo e Stitch
-      "31622081",  //BOSS R.P.V.
       "54718072",  //BOSS Marcelo 2 
       "34371337",  //BOSS MarcosD  
     ]
