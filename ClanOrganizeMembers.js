@@ -46,6 +46,7 @@ function AoW() {
       "21906149",  //BOSS Ciryus ᶠᵒᵇ 
       "31897672",  //BOSS Maximus
       "8749059",   //JEREBA ᶠᵒᵇ  
+      "31679348",  //9Julho
     ]
   }, {
     Id: 124511,
