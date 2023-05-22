@@ -25,46 +25,51 @@ function AoW() {
   self.debugger_fxListarMembrosPosTrocas = false;
   self.listClan = [{
     Id: 8961,
-    Name: "[BOSS] FOB FORÇA BRASILEIRA",
-    Code: "[B0SS] FOB1",
+    Code: "[FOB1]",
+    Name: "[FOB] FORÇA BRASILEIRA",
     Token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiI4OTYxIn0.Og1dqBOmxjQWgRkrQAkKdujUmnaVNhgCNppV8mpDOLE",
     Members: [],
     FixedMembers: [
       "34873241",  //BOSS Neguinhoᶠᵒᵇ
       "8674083",   //BOSS Alan ᶠᵒᵇ  
+      "7383073", 	 //BOSS FERREIRAᶠᵒᵇ 
+      "3499760", 	 //FOB Nozarashᶜᵃˢᵃ
+      "9735821", 	 //Akira ᶠᵒᵇ  
+      "26799876",	 //Monster ᶠᵒᵇ  
     ]
   }, {
     Id: 96873,
-    Code: "[BOSS] FOB2",
-    Name: "[BOSS] FOB2 FORÇA BRASILEIRA",
+    Code: "[FOB2]",
+    Name: "[FOB2] Base 2 FORÇA BRASILEIRA",
     Token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiI5Njg3MyJ9.r6armuLGZ_MBTRhVB2TACKCCr8owWbWZT_gjoELqDeM",
     Members: [],
     FixedMembers: [
       "45042124",  //BOSS Renata
       "9138909",   //BOSS Alan² ᶠᵒᵇ
-      "4113732",   //BOSS Kakashi -B 
+      "8658523", 	 //BOSS J....ᶠᵒᵇ
       "21906149",  //BOSS Ciryus ᶠᵒᵇ 
-      "31897672",  //BOSS Maximus
       "8749059",   //JEREBA ᶠᵒᵇ  
       "31679348",  //9Julho
-      "32761106",  //BOSS SPV ⁿᵒ ʷᵃʳ 
-      "32643013",  //Lilo e Stitch
-      "31622081",  //BOSS R.P.V.
+      "4113732",   //BOSS Kakashi -B 
+      "31897672",  //BOSS Maximus
+      "22724158",	 //B0SS BETO MARᶠᵒᵇ
+      "11286367",	 //Boss Green Hand
+      "22738400",	 //RegiKoryelo boss
+      "49955327",  //BOSS Nazar 
     ]
   }, {
     Id: 124511,
-    Code: "[B1SS] B1",
-    Name: "[BOSS] Base 1 Officials Super Squad",
+    Code: "[FOB3] B1",
+    Name: "[FOB3] Base 3 FORÇA BRASILEIRA",
     Token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxMjQ1MTEifQ.F7KFq0ec8_EzibPNpM7-4-hp8AA4wH4rkiA9S4tRsSY",
     Members: [],
     FixedMembers: [
-      "49955327",  //BOSS Nazar 
       "49508942",  //BOSS FelipeBR 
     ]
   }, {
     Id: 111,
-    Code: "[B2SS] B2",
-    Name: "[BOSS] Base 2 Officials Super Squad",
+    Code: "[FOB4] B2",
+    Name: "[FOB4] Base 4 FORÇA BRASILEIRA",
     Token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxMTEifQ.q64gvOJQJxrn1dHKqHXKXcjAiRc8cLUo2zmlA1-Yxoc",
     Members: [],
     FixedMembers: [
@@ -73,8 +78,8 @@ function AoW() {
     ]
   }, {
     Id: 434,
-    Code: "[B3SS] B3",
-    Name: "[BOSS] Base 3 Officials Super Squad",
+    Code: "[FOB5] B3",
+    Name: "[FOB5] Base 5 FORÇA BRASILEIRA",
     Token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiI0MzQifQ.f-ypoMbeZIWIy70K7EAs0HekeVkM6bxhVpF-ocLBAgc",
     Members: [],
     FixedMembers: [
@@ -85,23 +90,34 @@ function AoW() {
       "40554892",  //Emunah
       "47696588",  //BOSS FabioJF 
       "20716375",  //BOSS Junior71
-      "6818820",   //BOSS CauNas
+
       "50989881",  //BOSS JÒŤÄ ĶÄ 
       "9765666",   //BOSS Thor-rj
+
+      "40554892",  //Emunah   
+      "50372088",	 //BOSS THIAGO
+      "9514458", 	 //BOSS CSAN 
+      "12749140",	 //BOSS Kyron_BR
+      "44270355",	 //ᴮᵒˢˢ Nicklaus 
+      "6818820",	 //BOSS CauNas 
+      "10619497",	 //Boss Alpha Betho
+      "11529436",	 //BRA-FABRICIO 
+      "32227562",	 //BOSS Devastador 
+      "36851655",	 //BOSS Simone 
     ]
   }, {
     Id: 1264,
-    Code: "[BO4S] B4",
-    Name: "[BOSS] Base 4 Officials Super Squad",
+    Code: "[FOB6] B4",
+    Name: "[FOB6] Base 6 FORÇA BRASILEIRA",
     Token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxMjY0In0.T0ZwLBdKnvWV55QenqiHJf0oj5Rtfo5Cjj8XFR5UT14",
     Members: [],
     FixedMembers: [
       "31861030",  //Thor-rj2
       //"13721291",  //Motörhead ᵇᵒˢˢ 
     ]
-  }, {
+  }  , {
     Id: 13166,
-    Code: "[B5SS] B5",
+    Code: "[INSS] B5 - APOSENTADOS",
     Name: "[BOSS] Base 5 Officials Super Squad",
     Token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxMzE2NiJ9.UALR3aT5an8NDt1v3JFgBEmWyZeGKE004obR0aTlGKI",
     Members: [],
@@ -109,8 +125,12 @@ function AoW() {
       "45020374",  //BOSS Jean Grey 
       "54718072",  //BOSS Marcelo 2 
       "34371337",  //BOSS MarcosD  
+      "32761106",  //BOSS SPV ⁿᵒ ʷᵃʳ 
+      "32643013",  //Lilo e Stitch
+      "31622081",  //BOSS R.P.V.
     ]
-  }]
+  }
+  ]
 
   self.fxLoadMembers = async () => {
     if (self.debugger_fxLoadMembers) {
