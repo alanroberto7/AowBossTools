@@ -65,6 +65,7 @@ function AoW() {
     Members: [],
     FixedMembers: [
       "49508942",  //BOSS FelipeBR 
+      "16046856",  //BOSS FabioPeper
     ]
   }, {
     Id: 111,
@@ -74,7 +75,7 @@ function AoW() {
     Members: [],
     FixedMembers: [
       "44459220",  //Vanessa FAM ᴮᵒˢˢ 
-      "16046856",  //BOSS FabioPeper
+      "8329375",   //BOSS Carped13m
     ]
   }, {
     Id: 434,
@@ -83,7 +84,6 @@ function AoW() {
     Token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiI0MzQifQ.f-ypoMbeZIWIy70K7EAs0HekeVkM6bxhVpF-ocLBAgc",
     Members: [],
     FixedMembers: [
-      "8329375",   //BOSS Carped13m
       "21420744",  //8° AnjoJustMeᶠᵒᵇ   
       "5060368",   //BOSS lima01 
       "9336929",   //SmokingSnakes
@@ -123,7 +123,7 @@ function AoW() {
     Members: [],
     FixedMembers: [
       "45020374",  //BOSS Jean Grey 
-      "54718072",  //BOSS Marcelo 2 
+      //"54718072",  //BOSS Marcelo 2 
       "34371337",  //BOSS MarcosD  
       "32761106",  //BOSS SPV ⁿᵒ ʷᵃʳ 
       "32643013",  //Lilo e Stitch
